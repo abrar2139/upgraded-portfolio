@@ -1,0 +1,29 @@
+.trail{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:1px solid rgb(94, 105, 116);
+    background: rgb(94, 105, 116) ;
+    position: fixed;
+    animation: come 1s linear forwards;
+}
+
+@keyframes come{
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0) translateY(50px);
+        opacity: 0;
+    }
+}
+
+#parent-img:hover img {
+transform:scale(1.1);
+transition: all 0.5 ease-in-out;
+}
+
